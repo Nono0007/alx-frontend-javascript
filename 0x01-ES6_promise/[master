@@ -1,0 +1,189 @@
+ changed, 9 insertions(+)
+ create mode 100644 0x01-ES6_promise/4-main.js
+ create mode 100644 0x01-ES6_promise/4-user-promise.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git push
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 582 bytes | 582.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nono0007/alx-frontend-javascript.git
+   d751925b..e4f9e5bd  master -> master
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# cat > 3-all.js
+import { uploadPhoto, createUser } from './utils';
+
+export default function handleProfileSignup() {
+  let firstName;
+  let lastName;
+  let body;
+
+  const p = uploadPhoto();
+  const u = createUser();
+
+  return Promise.all([p, u]).then((data) => {
+    body = data[0].body;
+    firstName = data[1].firstName;
+    lastName = data[1].lastName;
+    console.log(`${body} ${firstName} ${lastName}`);
+  }).catch(() => {
+    console.log('Signup system offline');
+  });
+}
+^C
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git add .
+groot@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git commit -m '3-all.js'
+[master 2f5ac144] 3-all.js
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git push
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 374 bytes | 4.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Nono0007/alx-frontend-javascript.git
+   e4f9e5bd..2f5ac144  master -> master
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# clear
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# client_loop: send disconnect: Connection reset by peer
+
+User@DESKTOP-7L4FS2F MINGW64 ~
+$ ssh 31a13e54958f@31a13e54958f.07cd2485.alx-cod.online
+31a13e54958f@31a13e54958f.07cd2485.alx-cod.online's password:
+root@31a13e54958f:/# cd alx-frontend-javascript/0x01-ES6_promise/
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi 5-photo-reject.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi 5-main.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git add .
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git commit -m '5-photo-reject.js'
+gi[master 6492e086] 5-photo-reject.js
+ 2 files changed, 6 insertions(+)
+ create mode 100644 0x01-ES6_promise/5-main.js
+ create mode 100644 0x01-ES6_promise/5-photo-reject.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git push
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 595 bytes | 595.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nono0007/alx-frontend-javascript.git
+   2f5ac144..6492e086  master -> master
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi 6-final-user.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi 6-main.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git add .
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git commit -m '6-final-user.js'
+[master 39e6828a] 6-final-user.js
+ 2 files changed, 25 insertions(+)
+ create mode 100644 0x01-ES6_promise/6-final-user.js
+ create mode 100644 0x01-ES6_promise/6-main.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git push
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 818 bytes | 818.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nono0007/alx-frontend-javascript.git
+   6492e086..39e6828a  master -> master
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise#
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi 7-load_balancer.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi 7-main.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git add .
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git commit -m '7-load_balancer.js'
+git[master 5d8f5eea] 7-load_balancer.js
+ 2 files changed, 26 insertions(+)
+ create mode 100644 0x01-ES6_promise/7-load_balancer.js
+ create mode 100644 0x01-ES6_promise/7-main.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git push
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 744 bytes | 744.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nono0007/alx-frontend-javascript.git
+   39e6828a..5d8f5eea  master -> master
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# cat > 6-final-user.js
+import signUpUser from './4-user-promise';
+import uploadPhoto from './5-photo-reject';
+
+export default function handleProfileSignup(firstName, lastName, fileName) {
+  const s = signUpUser(firstName, lastName);
+  const u = uploadPhoto(fileName);
+
+  return Promise.allSettled([s, u]).then((vals) => {
+    const resArr = [];
+    vals.forEach((val) => {
+      if (val.status === 'fulfilled') {
+        resArr.push({ status: val.status, value: val.value });
+      } else {
+        resArr.push({
+          status: val.status,
+          value: `Error: ${val.reason.message}`,
+        });
+      }
+    });
+    return resArr;
+  });
+}
+^C
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# cat 6-main.js
+import handleProfileSignup from './6-final-user';
+
+console.log(handleProfileSignup("Bob", "Dylan", "bob_dylan.jpg"));
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# cat > 6-main.js
+import handleProfileSignup from './6-final-user';
+
+console.log(handleProfileSignup("Bob", "Dylan", "bob_dylan.jpg"));
+^C
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git add .
+gitroot@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git commit -m '6-final-user.js'
+[master fb28b90e] 6-final-user.js
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git push
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 389 bytes | 389.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Nono0007/alx-frontend-javascript.git
+   5d8f5eea..fb28b90e  master -> master
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise#
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi 8-try.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi 8-main.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git add .
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git commit -m '8-try.js'
+[master 7375b542] 8-try.js
+ 2 files changed, 11 insertions(+)
+ create mode 100644 0x01-ES6_promise/8-main.js
+ create mode 100644 0x01-ES6_promise/8-try.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git push
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 593 bytes | 593.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nono0007/alx-frontend-javascript.git
+   fb28b90e..7375b542  master -> master
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi 9-try.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi 9-main.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git add .
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git commit -m '9-try.js'
+[master 952f6453] 9-try.js
+ 2 files changed, 14 insertions(+)
+ create mode 100644 0x01-ES6_promise/9-main.js
+ create mode 100644 0x01-ES6_promise/9-try.js
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# git push
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 650 bytes | 650.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nono0007/alx-frontend-javascript.git
+   7375b542..952f6453  master -> master
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise#
+root@31a13e54958f:/alx-frontend-javascript/0x01-ES6_promise# vi
+
