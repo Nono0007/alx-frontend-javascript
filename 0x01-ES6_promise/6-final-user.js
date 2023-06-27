@@ -14,7 +14,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
         resArr.push({
           status: val.status,
           value: `Error: ${val.reason.message}`,
-	});
+        });
       }
     });
     return resArr;
