@@ -10,7 +10,7 @@ export default function handleProfileSignup() {
 
   return Promise.all([p, u]).then((data) => {
     body = data[0].body;
-    firsstName = data[1].firstName;
+    firstName = data[1].firstName;
     lastName = data[1].lastName;
     console.log(`${body} ${firstName} ${lastName}`);
   }).catch(() => {
